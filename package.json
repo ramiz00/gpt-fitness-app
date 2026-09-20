@@ -1,0 +1,12 @@
+{
+  "name": "stride-fitness",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "dev:web": "npm run dev --workspace=@stride/web",
+    "dev:mobile": "npm run start --workspace=@stride/mobile",
+    "build:web": "npm run build --workspace=@stride/web",
+    "typecheck": "npm run typecheck --workspace=@stride/web && npm run typecheck --workspace=@stride/mobile"
+  }
+}
